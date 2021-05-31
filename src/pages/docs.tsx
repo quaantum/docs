@@ -1,12 +1,16 @@
+import { graphql } from "gatsby";
 import { Box, Grid, Heading } from "quaantum-components";
 import React from "react";
 import App from "../components/App";
+import { Data } from "../utils/data";
 
-interface docsProps {}
+interface DocsProps {
+  data: Data;
+}
 
-const docs: React.FC<docsProps> = ({}) => {
+const Docs: React.FC<DocsProps> = ({ data }) => {
   return (
-    <App>
+    <App data={data}>
       <Box>
         <Grid as='nav'>
           <Heading>Quaantum Components</Heading>
@@ -17,4 +21,15 @@ const docs: React.FC<docsProps> = ({}) => {
   );
 };
 
-export default docs;
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        github
+      }
+    }
+  }
+`;
+
+export default Docs;

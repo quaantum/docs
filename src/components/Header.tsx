@@ -22,6 +22,7 @@ const Header: React.FC<HeaderProps> = ({ github }) => {
       r='15px'
       m='20px'
       justifyContent='space-between'
+      boxShadow='0px 0px 5px 7px rgba(0,0,0,.2)'
     >
       <Link href='/' textDecoration='none'>
         <Logo />

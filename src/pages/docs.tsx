@@ -1,7 +1,8 @@
 import { graphql } from "gatsby";
-import { Box, Grid, Heading } from "quaantum-components";
+import { Box } from "quaantum-components";
 import React from "react";
 import App from "../components/App";
+import DocsNav from "../components/DocsNav";
 import { Data } from "../utils/data";
 
 interface DocsProps {
@@ -12,9 +13,7 @@ const Docs: React.FC<DocsProps> = ({ data }) => {
   return (
     <App data={data}>
       <Box>
-        <Grid as='nav'>
-          <Heading>Quaantum Components</Heading>
-        </Grid>
+        <DocsNav />
         <Box as='main'></Box>
       </Box>
     </App>

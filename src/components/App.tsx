@@ -58,6 +58,24 @@ const quaantumTheme = extendTheme(theme, {
         color: "purple.400",
       },
     },
+    ListItem: {
+      variants: {
+        unstyled: {
+          listStyle: "none",
+        },
+      },
+      base: {},
+      defaultVariant: "none",
+    },
+    Link: {
+      base: { color: "white" },
+      variants: {
+        docsNav: {
+          fontSize: "1.2rem",
+        },
+      },
+      defaultVariant: "none",
+    },
     Button: {
       ...theme.components.Button,
       base: {

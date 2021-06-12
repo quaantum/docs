@@ -82,6 +82,7 @@ const DocsNav: React.FC<DocsNavProps> = ({}) => {
       r='0 0 8px 8px'
       zIndex={-1}
       boxShadow='0px 0px 5px 5px rgba(0,0,0,.1)'
+      d='inline-block'
     >
       {sections.map((section) => (
         <Box as='section' key={section.slug} my='20px'>

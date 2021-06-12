@@ -52,6 +52,14 @@ const quaantumTheme = extendTheme(theme, {
     },
   },
   components: {
+    Text: {
+      base: {
+        color: "white",
+      },
+      variants: {},
+      defaultVariant: "none",
+    },
+
     Heading: {
       ...theme.components.Heading,
       base: {
